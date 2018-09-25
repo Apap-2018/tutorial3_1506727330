@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Detail</title>
+</head>
+<body>
+    <h3 th:text="${car?.id}? ${car.id} : 'Mobil tidak ditemukan'"></h3>
+    <h3 th:text="${car?.brand}"></h3>
+    <h3 th:text="${car?.type}"></h3>
+    <h3 th:text="${car?.price}"></h3>
+    <h3 th:text="${car?.amount}"></h3>
+</body>
+</html>
